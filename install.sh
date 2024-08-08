@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt install -y fd-find luarocks
+
 # Install latest static tmux
 sudo curl -L https://github.com/axonasif/build-static-tmux/releases/latest/download/tmux.linux-amd64.stripped -o /usr/bin/tmux
 sudo chmod +x /usr/bin/tmux
@@ -33,5 +35,3 @@ sudo ln -s /opt/nvim-linux64/bin/nvim /usr/bin/nvim
 echo "Install lazyvim"
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
-
-sudo apt install fd-find
